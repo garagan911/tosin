@@ -1,0 +1,68 @@
+body{
+  @include Poppins_Regular;
+  color: $colorBody;
+}
+input, select{
+  &:focus{
+    outline: none;
+  }
+}
+p{
+  @include text-p-normal;
+  color: $colorP;
+}
+p, h1, h2, ul, h3{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+h1, h2, h3, h4{
+  color: $colorTitle;
+}
+
+h1{
+  @include title-h1;
+}
+h2{
+  @include title-h2;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1182px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  z-index: 1;
+}
+input, button, a{
+  &:focus{
+    outline: none;
+  }
+}
+.text{
+  &-purple{
+    color: $colorPurple;
+  }
+}
+.m{
+  &t{
+    &-0{
+      margin-top: 0 !important;
+    }
+  }
+}
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
+  color: #ff0000;
+  padding-left: 4px;
+  border: none;
+  display: none !important;
+}
+span.wpcf7-not-valid-tip{
+  position: absolute;
+  bottom: -26px;
+  left: 22px;
+  font-size: 12px;
+}

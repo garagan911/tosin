@@ -1,0 +1,122 @@
+
+//Font Family
+
+@mixin Poppins_Regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+@mixin Poppins_Medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+@mixin Poppins_SemiBold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+@mixin Poppins_Bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+$fs-80: 80px;
+$fs-36: 36px;
+$fs-34: 34px;
+$fs-20: 20px;
+$fs-18: 18px;
+$fs-16: 16px;
+$fs-14: 14px;
+$fs-12: 12px;
+
+@mixin title-h1 {
+  @include Poppins_Medium;
+  font-size: $fs-80;
+  line-height: 81px;
+  letter-spacing: -0.025em;
+}
+
+@mixin title-h2 {
+  @include Poppins_Bold;
+  font-size: $fs-36;
+  line-height: 43px;
+}
+
+@mixin text-p-big {
+  @include Poppins_Regular;
+  font-size: $fs-18;
+  line-height: 27px;
+}
+
+@mixin text-p-normal {
+  @include Poppins_Regular;
+  font-size: $fs-16;
+  line-height: 25px;
+}
+
+@mixin text-p-small {
+  @include Poppins_Regular;
+  font-size: $fs-14;
+  line-height: 25px;
+}
+
+@mixin nav-item {
+  @include Poppins_Regular;
+  font-size: $fs-16;
+  line-height: 24px;
+}
+
+@mixin btn-submit {
+  @include Poppins_Bold;
+  font-size: $fs-20;
+  line-height: 30px;
+}
+
+@mixin placeholder {
+  @include Poppins_Medium;
+  font-size: $fs-20;
+  line-height: 30px;
+}
+
+@mixin title-purple {
+  @include Poppins_Medium;
+  font-size: $fs-20;
+  line-height: 25px;
+}
+
+@mixin icon-text {
+  @include Poppins_Medium;
+  font-size: $fs-18;
+  line-height: 25px;
+}
+@mixin font-footer {
+  @include Poppins_Regular;
+  font-size: $fs-12;
+  line-height: 19px;
+}
+//Colors
+
+
+//scrollbar style
+@mixin scrollbar {
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DBDDE3;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #676A80;
+  }
+}
+
+$colorBody: #757A85;
+$colorPurple: #506EF5;
+$colorTitle: #11142D;
+$colorP: #676A80;
+$placeholderColor: #A1A6B1;
+
+$bg-section-light-blue: #F9FAFE;

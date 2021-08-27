@@ -1,0 +1,82 @@
+.company{
+  padding-top: 89px;
+  &__container{
+    max-width: 1227px;
+  }
+  &__grid-row{
+    display: grid;
+    grid-template-columns: 556px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0;
+  }
+  &__description{
+    h2{
+      line-height: 46px;
+    }
+  }
+  &__text{
+    &:first-of-type{
+      margin-top: 48px;
+    }
+    margin-top: 25px;
+    padding-left: 3px;
+  }
+  &__right-date{
+    position: relative;
+    top: -54px;
+    left: 73px;
+    max-width: 582px;
+  }
+  &-blocks{
+    padding-top: 132px;
+    padding-bottom: 130px;
+
+    &__container{
+      display: grid;
+      grid-template-columns: repeat(3, 359px);
+      grid-template-rows: 1fr;
+      grid-column-gap: 26px;
+      grid-row-gap: 0;
+      max-width: 1227px;
+    }
+    &__block{
+      border-radius: 15px;
+      padding: 28px 28px 49px 29px;
+      box-shadow: 0 5px 50px -30px #a6a7af;
+    }
+    &__title{
+      @include Poppins_Bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: $colorTitle;
+    }
+    &__text{
+      margin-top: 20px;
+      font-size: 14px;
+      color: $colorP;
+    }
+  }
+}
+
+.partners{
+  padding-top: 102px;
+  padding-bottom: 78px;
+  background: $bg-section-light-blue;
+  &__h2{
+    text-align: center;
+  }
+  &__wrap{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin-top: 27px;
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

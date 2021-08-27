@@ -1,0 +1,237 @@
+.contact {
+  padding-top: 57px;
+  padding-bottom: 199px;
+
+  &__h2 {
+    padding-left: 53px;
+  }
+
+  &__grid-row {
+    display: grid;
+    grid-template-columns: 587px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0;
+  }
+
+  &__right-date {
+    img {
+      position: relative;
+      left: 18px;
+      top: 74px;
+    }
+  }
+}
+
+.address-wrapper {
+  margin-top: 121px;
+
+  &__block {
+    display: grid;
+    grid-template-columns: 39px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0;
+    margin-top: 50px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &-info {
+      @include Poppins_Regular;
+      font-size: 18px;
+      line-height: 39px;
+
+      .email {
+        @include Poppins_Medium;
+
+        span {
+          color: $colorTitle;
+        }
+
+        a {
+          color: $colorPurple;
+        }
+      }
+
+      .text {
+
+      }
+    }
+  }
+}
+
+.access-request {
+  padding: 50px 10px 22px 40px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 6px 73px -44px #6975b4;
+  margin-top: 180px;
+
+  .wrap-form{
+    height: 452px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 30px;
+
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: #DBDDE3;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #676A80;
+    }
+
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 21px;
+    &-third{
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 21px;
+    }
+    label {
+      @include nav-item;
+      margin-top: 18px;
+      &.file-input{
+        position: relative;
+        span{
+          &#file-chosen2, &#file-chosen{
+            position: absolute;
+            left: 15px;
+            top: 52px;
+            max-width: 240px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #11142D;
+          }
+        }
+      }
+    }
+    .my-firm, .productinterested{
+      display: inline-block;
+      margin-top: 11px;
+      width: 100%;
+      background: #F2F6FF;
+      border-radius: 10px;
+      padding: 18px 15px;
+      border: none;
+      min-height: 60px;
+      position: relative;
+      input, select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #11142D;
+        &.icon{
+          background: transparent;
+          margin-top: 0;
+        }
+
+      }
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 14px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background: url("../../img/contact/download-icon.svg") no-repeat;
+        cursor: pointer;
+      }
+    }
+    input, select {
+      margin-top: 11px;
+      width: 100%;
+      background: #F2F6FF;
+      border-radius: 10px;
+      padding: 18px 15px;
+      border: none;
+      min-height: 60px;
+      &.icon{
+        width: 100%;
+        height: 0.1px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &-one {
+      margin-top: 18px;
+
+      label {
+        @include nav-item;
+      }
+
+      input {
+        margin-top: 11px;
+        width: 100%;
+        background: #F2F6FF;
+        border-radius: 10px;
+        padding: 18px 15px;
+        border: none;
+      }
+    }
+  }
+
+  span.wpcf7-not-valid-tip{
+    position: absolute;
+    bottom: -42px;
+    left: 2px;
+  }
+
+}
+.form-submit{
+  text-align: center;
+  position: relative;
+  .wpcf7-submit{
+    background: #506EF5;
+    box-shadow: 4px 4px 18px rgb(68 102 255 / 57%);
+    border-radius: 15px;
+    padding: 21px 70px;
+    text-transform: capitalize;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50px auto 0;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      background: rgb(80 110 245 / 81%);
+    }
+  }
+  .ajax-loader{
+    position: absolute;
+    bottom: 0;
+  }
+}
